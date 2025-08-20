@@ -6,7 +6,7 @@
         const data = await response.json();
         let htmlString = '<ul>';
         for (let branch of data) {
-          if(brancg.name!="gh-pages") {
+          if(branch.name!="gh-pages") {
             htmlString += `<li><a href="docs/${branch.name}/doxygen/">${branch.name} / Doxygen</a></li>`;
             htmlString += `<li><a href="docs/${branch.name}/javadoc/">${branch.name} / Javadoc</a></li>`;
           }
